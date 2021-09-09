@@ -34,7 +34,7 @@ async def start(client, message):
 
 @Client.on_message(filters.command(['help']))
 async def help(client, message):
-       await message.reply("<b>Simplest Way😂</b>\n\n<i>How many times have I said that just giving the name of a song is enough.🙄\nDo not expect any other help from me😠</i>\n\n<b>Eg</b> `Vaathi Coming`",
+       await message.reply("<b>I'm helping you to play your loved and favourite songs in any place you need.Do you want to know more about me hit the @ViharaSenindu</i>\n\n<b>Eg</b> `Vaathi Coming`",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
