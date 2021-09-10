@@ -1,5 +1,3 @@
-#                     ----------------------------- @Peterparker6 ---------------------------
-#                                     --------------- Cammands ----------------
 import ffmpeg
 import logging
 import requests
@@ -8,8 +6,7 @@ from pyrogram import filters, Client, idle
 from youtube_search import YoutubeSearch
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-## Extra Fns -------
-# Convert hh:mm:ss to seconds
+
 def time_to_seconds(time):
     stringt = str(time)
     return sum(int(x) * 60 ** i for i, x in enumerate(reversed(stringt.split(':'))))
@@ -18,16 +15,12 @@ def time_to_seconds(time):
 ## Commands --------
 @Client.on_message(filters.command(['start']))
 async def start(client, message):
-       await message.reply("👋 𝗛𝗲𝗹𝗹𝗼 𝗕𝗿𝗼\n\n𝐈 𝐚𝐦 𝐌𝐮𝐬𝐢𝐜 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫[🎶](https://telegra.ph/file/92a1f08c6ca91e0e8c163.mp4)\n\n𝑺𝒆𝒏𝒕 𝒕𝒉𝒆 𝑵𝒂𝒎𝒆 𝒐𝒇 𝒕𝒉𝒆 𝐒𝐨𝐧𝐠 𝒀𝒐𝒖 𝑾𝒂𝒏𝒕... 😍🥰🤗\n<b>Also I Support Inline YouTube Search 😉</b>\n\n𝗝𝘂𝘀𝘁 𝗧𝘆𝗽𝗲 𝗮 𝗦𝗼𝗻𝗴 𝗡𝗮𝗺𝗲\n\n𝐄𝐠. `Believer`",
+       await message.reply("𝓘 𝓐𝓶 𝓢𝓸𝓷𝓰 𝓓𝓸𝔀𝓷𝓵𝓸𝓪𝓭𝓮𝓻 𝓣𝓮𝓵𝓮𝓰𝓻𝓪𝓶 𝓑𝓸𝓽\n<b>I Have Inline Song Downloading Feature🥳🥳🥳",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿', url='https://t.me/Peterparker6'),
-                    InlineKeyboardButton('𝗦𝗼𝘂𝗿𝗰𝗲', url='https://github.com/Avengers105/Music-Bot')
+                    InlineKeyboardButton('𝓤𝓹𝓭𝓪𝓽𝓮 𝓒𝓱𝓪𝓷𝓷𝓮𝓵🔔', url='https://t.me/Songdownloader'),
                 ],
-                [
-                    InlineKeyboardButton('Search Inline', switch_inline_query_current_chat='')
-                ]
             ]
         )
     )
@@ -38,7 +31,7 @@ async def help(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('𝗦𝗼𝘂𝗿𝗰𝗲', url='https://github.com/Avengers105/Music-Bot')
+                    InlineKeyboardButton('Developer', url='https://t.me/RolexXTm2')
                 ]
             ]
         )
@@ -46,7 +39,7 @@ async def help(client, message):
 
 @Client.on_message(filters.command(['about']))
 async def about(client, message):
-       await message.reply("➪<b>Name</b> : ✫<i>Music Downloader</i>\n➪<b>Developer</b> : ✫[𝘗𝘦𝘵𝘦𝘳 𝘗𝘢𝘳𝘬𝘦𝘳](https://t.me/Peterparker6)\n➪<b>Language</b> : ✫<i>Python3</i>\n➪<b>Server</b> : ✫[𝘏𝘦𝘳𝘰𝘬𝘶](https://heroku.com/)\n➪<b>Source Code</b> : ✫[𝘊𝘭𝘪𝘤𝘬 𝘏𝘦𝘳𝘦](https://github.com/Avengers105/Music-Bot)",
+       await message.reply("➪<b>Name</b> : ✫<i>Music Downloader</i>\n➪<b>Developer</b> : ✫[Relox X](https://t.me/RolexXTm2)\n➪<b>Language</b> : ✫<i>Python3</i>\n➪<b>Server</b> : ✫[𝘏𝘦𝘳𝘰𝘬𝘶](https://heroku.com/)\n➪<b>Source Code</b> : ✫[𝘊𝘭𝘪𝘤𝘬 𝘏𝘦𝘳𝘦](https://github.com/viharasenindu)",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -60,7 +53,7 @@ async def about(client, message):
 def a(client, message):
     query=message.text
     print(query)
-    m = message.reply('🔎 𝗦𝗲𝗮𝗿𝗰𝗵𝗶𝗻𝗴 𝘁𝗵𝗲 𝗦𝗼𝗻𝗴...')
+    m = message.reply('🔎 𝓢𝓮𝓻𝓪𝓬𝓱𝓲𝓷𝓰 𝓨𝓸𝓾𝓻 𝓢𝓸𝓷𝓰...')
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = []
@@ -91,21 +84,21 @@ def a(client, message):
 
         except Exception as e:
             print(e)
-            m.edit('𝐅𝐨𝐮𝐧𝐝 𝐍𝐨𝐭𝐡𝐢𝐧𝐠. 𝐓𝐫𝐲 𝐂𝐡𝐚𝐧𝐠𝐢𝐧𝐠 𝐓𝐡𝐞 𝐒𝐩𝐞𝐥𝐥𝐢𝐧𝐠 𝐀 𝐋𝐢𝐭𝐭𝐥𝐞 😐')
+            m.edit('𝓢𝓸𝓻𝓻𝔂 𝓝𝓸𝓽 𝓕𝓸𝓾𝓷𝓭 𝓨𝓸𝓾𝓻 𝓢𝓸𝓷𝓰')
             return
     except Exception as e:
         m.edit(
-            "❎ 𝐹𝑜𝑢𝑛𝑑 𝑁𝑜𝑡ℎ𝑖𝑛𝑔. 𝐒𝐨𝐫𝐫𝐲.\n\n𝖯𝗅𝖾𝖺𝗌𝖾 𝖳𝗋𝗒 𝖠𝗀𝖺𝗂𝗇 𝖮𝗋 𝖲𝖾𝖺𝗋𝖼𝗁 𝖺𝗍 Google.com 𝖥𝗈𝗋 𝖢𝗈𝗋𝗋𝖾𝖼𝗍 𝖲𝗉𝖾𝗅𝗅𝗂𝗇𝗀 𝗈𝖿 𝗍𝗁𝖾 𝙎𝙤𝙣𝙜.\n\nEg.`Believer`"
+            "❎ 𝐹𝑜𝑢𝑛𝑑 𝑁𝑜𝑡ℎ𝑖𝑛𝑔.\n\nEg.`Faded`"
         )
         print(str(e))
         return
-    m.edit("`Uploading Your Song,Please Wait...`[🎧](https://telegra.ph/file/33e209cb838912e8714c9.mp4)")
+    m.edit("`𝓤𝓹𝓵𝓸𝓪𝓭𝓲𝓷𝓰 𝓨𝓸𝓾𝓻 𝓢𝓸𝓷𝓰,𝓟𝓵𝓮𝓪𝓼𝓮 𝓦𝓪𝓲𝓽...`")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep =  f'🎧 𝗧𝗶𝘁𝘁𝗹𝗲 : [{title[:35]}]({link})\n⏳ 𝗗𝘂𝗿𝗮𝘁𝗶𝗼𝗻 : `{duration}`\n👀 𝗩𝗶𝗲𝘄𝘀 : `{views}`\n\n📮 𝗕𝘆: {message.from_user.mention()}\n📤 𝗕𝘆 : @MusicDownloadv2bot'
+        rep =  f'🎧 𝓣𝓲𝓽𝓵𝓮 : [{title[:35]}]({link})\n⏳ 𝓓𝓾𝓻𝓪𝓽𝓲𝓸𝓷 : `{duration}`\n👀 𝓥𝓲𝓮𝔀𝓼 : `{views}`\n\n📮 𝗕𝘆: {message.from_user.mention()}\n📤 𝗕𝘆 : @RolexXTm2'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
@@ -113,7 +106,7 @@ def a(client, message):
         message.reply_audio(audio_file, caption=rep, parse_mode='HTML',quote=False, title=title, duration=dur, performer=performer, thumb=thumb_name)
         m.delete()
     except Exception as e:
-        m.edit('𝙁𝙖𝙞𝙡𝙚𝙙\n\n`Plesase Try Again Later`')
+        m.edit('𝓕𝓪𝓲𝓵𝓮𝓭\n\n`𝓟𝓵𝓮𝓼𝓪𝓼𝓮 𝓣𝓻𝔂 𝓐𝓰𝓪𝓲𝓷 𝓛𝓪𝓽𝓮𝓻`')
         print(e)
     try:
         os.remove(audio_file)
