@@ -1,3 +1,5 @@
+import os
+import time
 import ffmpeg
 import logging
 import requests
@@ -15,19 +17,20 @@ def time_to_seconds(time):
 ## Commands --------
 @Client.on_message(filters.command(['start']))
 async def start(client, message):
-       await message.reply("𝓘 𝓐𝓶 𝓢𝓸𝓷𝓰 𝓓𝓸𝔀𝓷𝓵𝓸𝓪𝓭𝓮𝓻 𝓣𝓮𝓵𝓮𝓰𝓻𝓪𝓶 𝓑𝓸𝓽\n<b>I Have Inline Song Downloading Feature🥳🥳🥳",
+       await message.reply("𝐼'𝓂 𝒽𝑒𝓁𝓅𝒾𝓃𝑔 𝓎𝑜𝓊 𝓉𝑜 𝓅𝓁𝒶𝓎 𝓎𝑜𝓊𝓇 𝓁𝑜𝓋𝑒𝒹 𝒶𝓃𝒹 𝒻𝒶𝓋𝑜𝓊𝓇𝒾𝓉𝑒 𝓈𝑜𝓃𝑔𝓈 𝒾𝓃 𝒶𝓃𝓎 𝓅𝓁𝒶𝒸𝑒 𝓎𝑜𝓊 𝓃𝑒𝑒𝒹.𝒟𝑜 𝓎𝑜𝓊 𝓌𝒶𝓃𝓉 𝓉𝑜 𝓀𝓃𝑜𝓌 𝓂𝑜𝓇𝑒 𝒶𝒷𝑜𝓊𝓉 𝓂𝑒 𝒽𝒾𝓉 𝓉𝒽𝑒 @𝒮𝐿𝒯𝑒𝓁𝑒𝐵𝑜𝓉𝓈.",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('𝓤𝓹𝓭𝓪𝓽𝓮 𝓒𝓱𝓪𝓷𝓷𝓮𝓵🔔', url='https://t.me/Songdownloader'),
-                ],
+                    InlineKeyboardButton('𝓤𝓹𝓭𝓪𝓽𝓮 𝓒𝓱𝓪𝓷𝓷𝓮𝓵🔔', url='https://t.me/SLTeleBots'),
+                    InlineKeyboardButton('Search Inline', switch_inline_query_current_chat='')
+                ]
             ]
         )
     )
 
 @Client.on_message(filters.command(['help']))
 async def help(client, message):
-       await message.reply("<b>I'm helping you to play your loved and favourite songs in any place you need.Do you want to know more about me hit the @ViharaSenindu</i>\n\n<b>Eg</b> `Vaathi Coming`",
+       await message.reply("<b>𝐻𝒾𝓉 𝒽𝑒𝓁𝓅 𝒷𝓊𝓉𝓉𝑜𝓃 𝓉𝑜 𝒻𝒾𝓃𝒹 𝑜𝓊𝓉 𝓂𝑜𝓇𝑒 𝒶𝒷𝑜𝓊𝓉 𝒽𝑜𝓌 𝓉𝑜 𝓊𝓈𝑒 𝓂𝑒... 𝒮𝑒𝓃𝒹 - /𝒽𝑒𝓁𝓅 </i>\n\n<b>Eg</b> `Vaathi Coming`",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
