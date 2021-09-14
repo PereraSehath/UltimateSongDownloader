@@ -9,11 +9,12 @@
   <img src="https://telegra.ph/file/591a30f3d0e67c0bbd2c6.jpg">
 </p>
 
-# Deploy Heroku
+# Deploy Heroku ✅
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/viharasenindu/UltimateSongDownloader/tree/main)
 
-#### Contribtor
-- [Vihara Senindu](https://github.com/viharasenindu): Owner
 
+#### Credits
 
+[Pyrogram Library](https://github.com/pyrogram/pyrogram)
+[Prabhasha](https://github.com/Prabhasha-p)
