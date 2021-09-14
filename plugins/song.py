@@ -17,7 +17,7 @@ def time_to_seconds(time):
 ## Commands --------
 @Client.on_message(filters.command(['start']))
 async def start(client, message):
-       await message.reply("𝐼'𝓂 𝒽𝑒𝓁𝓅𝒾𝓃𝑔 𝓎𝑜𝓊 𝓉𝑜 𝓅𝓁𝒶𝓎 𝓎𝑜𝓊𝓇 𝓁𝑜𝓋𝑒𝒹 𝒶𝓃𝒹 𝒻𝒶𝓋𝑜𝓊𝓇𝒾𝓉𝑒 𝓈𝑜𝓃𝑔𝓈 𝒾𝓃 𝒶𝓃𝓎 𝓅𝓁𝒶𝒸𝑒 𝓎𝑜𝓊 𝓃𝑒𝑒𝒹.[🎶](https://telegra.ph/file/507fa8e980c6274aa1a59.jpg)𝒟𝑜 𝓎𝑜𝓊 𝓌𝒶𝓃𝓉 𝓉𝑜 𝓀𝓃𝑜𝓌 𝓂𝑜𝓇𝑒 𝒶𝒷𝑜𝓊𝓉 𝓂𝑒 𝒽𝒾𝓉 𝓉𝒽𝑒 @SlTeleBots.",
+       await message.reply("I'm helping download your lovely songs on Telegram🎸🎸🎸.[🎶](https://telegra.ph/file/507fa8e980c6274aa1a59.jpg)Do you want to know more about me hit the @SlTeleBots.",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -30,7 +30,7 @@ async def start(client, message):
 
 @Client.on_message(filters.command(['help']))
 async def help(client, message):
-       await message.reply("<b>𝐻𝒾𝓉 𝒽𝑒𝓁𝓅 𝒷𝓊𝓉𝓉𝑜𝓃 𝓉𝑜 𝒻𝒾𝓃𝒹 𝑜𝓊𝓉 𝓂𝑜𝓇𝑒 𝒶𝒷𝑜𝓊𝓉 𝒽𝑜𝓌 𝓉𝑜 𝓊𝓈𝑒 𝓂𝑒... 𝒮𝑒𝓃𝒹 - /𝒽𝑒𝓁𝓅 </i>\n\n<b>Eg</b> `/song Faded`",
+       await message.reply("<b>Hit help button  to find more about how to use me... 𝒮𝑒𝓃𝒹 - /𝒽𝑒𝓁𝓅 </i>\n\n<b>Eg</b> `/song Faded`",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -56,7 +56,7 @@ async def about(client, message):
 def a(client, message):
     query=message.text
     print(query)
-    m = message.reply('🔎 𝓢𝓮𝓻𝓪𝓬𝓱𝓲𝓷𝓰 𝓨𝓸𝓾𝓻 𝓢𝓸𝓷𝓰...')
+    m = message.reply('🔎 Searching Your Song...')
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = []
