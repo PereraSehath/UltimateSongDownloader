@@ -17,12 +17,12 @@ def time_to_seconds(time):
 ## Commands --------
 @Client.on_message(filters.command(['start']))
 async def start(client, message):
-       await message.reply("I'm helping download your lovely songs on Telegram🎸🎸🎸.[🎶](https://telegra.ph/file/507fa8e980c6274aa1a59.jpg)Do you want to know more about me hit the @SlTeleBots.",
+       await message.reply("𝐈'𝐦 𝐡𝐞𝐥𝐩𝐢𝐧𝐠 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐲𝐨𝐮𝐫 𝐥𝐨𝐯𝐞𝐥𝐲 𝐬𝐨𝐧𝐠𝐬 𝐨𝐧 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦🎸🎸🎸.[🎶](https://telegra.ph/file/507fa8e980c6274aa1a59.jpg)𝐃𝐨 𝐲𝐨𝐮 𝐰𝐚𝐧𝐭 𝐭𝐨 𝐤𝐧𝐨𝐰 𝐦𝐨𝐫𝐞 𝐚𝐛𝐨𝐮𝐭 𝐦𝐞 𝐡𝐢𝐭 𝐭𝐡𝐞 @𝐒𝐥𝐓𝐞𝐥𝐞𝐁𝐨𝐭𝐬.",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('𝓤𝓹𝓭𝓪𝓽𝓮 𝓒𝓱𝓪𝓷𝓷𝓮𝓵🔔', url='https://t.me/SLTeleBots'),
-                    InlineKeyboardButton('Search Inline', switch_inline_query_current_chat='')
+                    InlineKeyboardButton('𝐔𝐩𝐝𝐚𝐭𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥🔔', url='https://t.me/SLTeleBots'),
+                    InlineKeyboardButton('𝐒𝐞𝐚𝐫𝐜𝐡 𝐈𝐧𝐥𝐢𝐧𝐞', switch_inline_query_current_chat='')
                 ]
             ]
         )
@@ -30,7 +30,7 @@ async def start(client, message):
 
 @Client.on_message(filters.command(['help']))
 async def help(client, message):
-       await message.reply("<b>Hit help button  to find more about how to use me... Send - /help </i>\n\n<b>Eg</b> `/song Faded`",
+       await message.reply("<b>𝐇𝐢𝐭 𝐡𝐞𝐥𝐩 𝐛𝐮𝐭𝐭𝐨𝐧 𝐭𝐨 𝐟𝐢𝐧𝐝 𝐦𝐨𝐫𝐞 𝐚𝐛𝐨𝐮𝐭 𝐡𝐨𝐰 𝐭𝐨 𝐮𝐬𝐞 𝐦𝐞... 𝐒𝐞𝐧𝐝 - /help </i>\n\n<b>Eg</b> `/song Faded`",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -42,7 +42,7 @@ async def help(client, message):
 
 @Client.on_message(filters.command(['about']))
 async def about(client, message):
-       await message.reply("➪<b>Name</b> : ✫<i>Music Downloader</i>\n➪<b>Developer</b> : ✫[Vihara Senindu](https://t.me/ViharaSenindu)\n➪<b>Language</b> : ✫<i>Python3</i>\n➪<b>Server</b> : ✫[𝘏𝘦𝘳𝘰𝘬𝘶](https://heroku.com/)\n➪<b>Source Code</b> : ✫[𝘊𝘭𝘪𝘤𝘬 𝘏𝘦𝘳𝘦](https://github.com/viharasenindu)",
+       await message.reply("➪<b>Name</b> : ✫<i>Song Downloader</i>\n➪<b>Developer</b> : ✫[Vihara Senindu](https://t.me/ViharaSenindu)\n➪<b>Language</b> : ✫<i>Python3</i>\n➪<b>Server</b> : ✫[𝘏𝘦𝘳𝘰𝘬𝘶](https://heroku.com/)\n➪<b>Source Code</b> : ✫[𝘊𝘭𝘪𝘤𝘬 𝘏𝘦𝘳𝘦](https://github.com/viharasenindu)",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -56,7 +56,7 @@ async def about(client, message):
 def a(client, message):
     query=message.text
     print(query)
-    m = message.reply('🔎 Searching Your Song...')
+    m = message.reply('🔎 𝐒𝐞𝐚𝐫𝐜𝐡𝐢𝐧𝐠 𝐘𝐨𝐮𝐫 𝐒𝐨𝐧𝐠...')
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = []
@@ -87,7 +87,7 @@ def a(client, message):
 
         except Exception as e:
             print(e)
-            m.edit('Sorry Not Found Your Song!!!')
+            m.edit('𝐒𝐨𝐫𝐫𝐲 𝐍𝐨𝐭 𝐅𝐨𝐮𝐧𝐝 𝐘𝐨𝐮𝐫 𝐒𝐨𝐧𝐠!!!')
             return
     except Exception as e:
         m.edit(
@@ -95,13 +95,13 @@ def a(client, message):
         )
         print(str(e))
         return
-    m.edit("`Uploading Your Song, Please Wait...`")
+    m.edit("`𝐔𝐩𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝐘𝐨𝐮𝐫 𝐒𝐨𝐧𝐠, 𝐏𝐥𝐞𝐚𝐬𝐞 𝐖𝐚𝐢𝐭...`")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep =  f'🎧 Title : [{title[:35]}]({link})\n⏳ Duration : `{duration}`\n👀 Views : `{views}`\n\n📮 𝗕𝘆: {message.from_user.mention()}\n📤 𝗕𝘆 : @@SongDownloaderLkBot'
+        rep =  f'🎧 𝐓𝐢𝐭𝐥𝐞 : [{title[:35]}]({link})\n⏳ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧 : `{duration}`\n👀 𝐕𝐢𝐞𝐰𝐬 : `{views}`\n\n📮 𝗕𝘆: {message.from_user.mention()}\n📤 𝗕𝘆 : @SongDownloaderLkBot'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
@@ -109,7 +109,7 @@ def a(client, message):
         message.reply_audio(audio_file, caption=rep, parse_mode='HTML',quote=False, title=title, duration=dur, performer=performer, thumb=thumb_name)
         m.delete()
     except Exception as e:
-        m.edit('Failed\n\n`Please Try Again Later...`')
+        m.edit('𝐅𝐚𝐢𝐥𝐞𝐝\n\n`𝐏𝐥𝐞𝐚𝐬𝐞 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧 𝐋𝐚𝐭𝐞𝐫...`')
         print(e)
     try:
         os.remove(audio_file)
