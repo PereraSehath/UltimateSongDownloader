@@ -15,7 +15,7 @@
 
 
 #### Credits
--[Pyrogram Library](https://github.com/pyrogram/pyrogram)
+[Pyrogram Library](https://github.com/pyrogram/pyrogram)
 
--[Prabhasha](https://github.com/Prabhasha-p)
+[Prabhasha](https://github.com/Prabhasha-p)
 
