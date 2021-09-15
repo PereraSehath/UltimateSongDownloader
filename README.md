@@ -19,7 +19,7 @@
 
 [Prabhasha](https://github.com/Prabhasha-p)
 
-[Sandaru Muthumal](https://github.com/futureoracle2003)
+[Sandaru Muthumala](https://github.com/futureoracle2003)
 
 [Vishwa Sanasum](https://github.com/Shangmessay)
 
