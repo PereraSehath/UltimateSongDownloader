@@ -18,4 +18,6 @@
 [Pyrogram Library](https://github.com/pyrogram/pyrogram)
 
 [Prabhasha](https://github.com/Prabhasha-p)
+[Sandaeu Muthumal](https://github.com/futureoracle2003)
+[Vishwa Sanasum](https://github.com/Shangmessay)
 
