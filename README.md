@@ -13,13 +13,3 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/viharasenindu/UltimateSongDownloader/tree/main)
 
-
-#### Credits
-[Pyrogram Library](https://github.com/pyrogram/pyrogram)
-
-[Prabhasha](https://github.com/Prabhasha-p)
-
-[Sandaru Muthumala](https://github.com/futureoracle2003)
-
-[Vishwa Sanasum](https://github.com/Shangmessay)
-
