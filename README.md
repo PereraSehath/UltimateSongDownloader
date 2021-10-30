@@ -9,3 +9,7 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/viharasenindu/UltimateSongDownloader/tree/main)
 
+### Credits
+
+- [Pyrogram](http://github.com/pyrogram)
+- [Avengers](https://github.com/Avengers15)
